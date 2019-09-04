@@ -104,7 +104,69 @@ body {
     text-align: left;
     padding: 50px 15px;
 }
-#instantly article {
+#instantly-news .instantly-news {
     margin-bottom: 20px;
-    box
+    padding: 30px;
+    border: thin solid #eeeeee;
+    font-size: 16px;
+    border-radius: 10px;
+    position: relative;
+}
+#instantly-news .instantly-news h1 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #4a7ae6;
+    font-weight: 600;
+    width: 70%;
+    float: left;
+}
+#instantly-news .instantly-resume {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #999;
+    font-weight: 300;
+    width: 70%;
+    background: #cccccc;
+    float: left;
+}
+#instantly-news .instantly-details {
+    border-top: 1px solid #dadada;
+    margin-top: 20px;
+    padding-top: 20px;
+    clear: both;
+}
+
+#instantly-news .instantly-details .link {
+    display: inline-block;
+    text-decoration: none;
+    color: #8b53ff;
+    font-weight: 400;
+    width: 50%;
+}
+#instantly-news .instantly-details .data {
+    display: inline-block;
+    color: #333333;
+    font-weight: 400;
+    width: 48%;
+    text-align: right;
+}
+#instantly-news .instantly-image {
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    background: #f09;
+    float: right;
+    margin-bottom: 10px;
+    background-image: url(attr(data-newsimage));
+    background-size: cover;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
